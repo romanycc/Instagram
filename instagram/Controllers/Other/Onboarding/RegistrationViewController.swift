@@ -98,7 +98,7 @@ class RegistrationViewController: UIViewController {
         passwordField.resignFirstResponder()
         
         guard let email = emailField.text, !email.isEmpty,
-              let password = passwordField.text, !password.isEmpty, password.count>8,
+              let password = passwordField.text, !password.isEmpty, password.count >= 8,
               let username = usernameField.text, !username.isEmpty else{
                 return
         }
