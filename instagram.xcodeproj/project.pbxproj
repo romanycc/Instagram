@@ -36,6 +36,10 @@
 		142A49D82A78D24D00D53145 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 142A49D72A78D24D00D53145 /* FirebaseStorage */; };
 		142A49DA2A78D24D00D53145 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 142A49D92A78D24D00D53145 /* FirebaseStorageCombine-Community */; };
 		143AA0CE2A7A38CA0067A7A8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143AA0CD2A7A38CA0067A7A8 /* Extension.swift */; };
+		147C73072A8482F90004B756 /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C73062A8482F90004B756 /* IGFeedPostTableViewCell.swift */; };
+		147C730A2A84864C0004B756 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C73092A84864C0004B756 /* IGFeedPostHeaderTableViewCell.swift */; };
+		147C730C2A8486870004B756 /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C730B2A8486870004B756 /* IGFeedPostActionsTableViewCell.swift */; };
+		147C730E2A8486B80004B756 /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C730D2A8486B80004B756 /* IGFeedPostGeneralTableViewCell.swift */; };
 		147D35C12A77D6A8007E55D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D35C02A77D6A8007E55D4 /* AppDelegate.swift */; };
 		147D35C32A77D6A8007E55D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D35C22A77D6A8007E55D4 /* SceneDelegate.swift */; };
 		147D35C52A77D6A8007E55D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D35C42A77D6A8007E55D4 /* HomeViewController.swift */; };
@@ -64,6 +68,10 @@
 /* Begin PBXFileReference section */
 		142A49A22A78CE9C00D53145 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		143AA0CD2A7A38CA0067A7A8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		147C73062A8482F90004B756 /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		147C73092A84864C0004B756 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		147C730B2A8486870004B756 /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		147C730D2A8486B80004B756 /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		147D35BD2A77D6A8007E55D4 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147D35C02A77D6A8007E55D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		147D35C22A77D6A8007E55D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +137,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147C73052A8482A00004B756 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				147C73082A8486060004B756 /* Home Feed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		147C73082A8486060004B756 /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				147C73062A8482F90004B756 /* IGFeedPostTableViewCell.swift */,
+				147C73092A84864C0004B756 /* IGFeedPostHeaderTableViewCell.swift */,
+				147C730B2A8486870004B756 /* IGFeedPostActionsTableViewCell.swift */,
+				147C730D2A8486B80004B756 /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
+			sourceTree = "<group>";
+		};
 		147D35B42A77D6A8007E55D4 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +196,7 @@
 		147D35D62A77D7A7007E55D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				147C73052A8482A00004B756 /* Cells */,
 				147D35C92A77D6A8007E55D4 /* Assets.xcassets */,
 				147D35D92A77D96E007E55D4 /* Storyboards */,
 			);
@@ -360,19 +388,23 @@
 				147D35DD2A77DCC7007E55D4 /* CameraViewController.swift in Sources */,
 				147D35DF2A77DCDF007E55D4 /* NotificationViewController.swift in Sources */,
 				147D35E72A77DDF6007E55D4 /* RegistrationViewController.swift in Sources */,
+				147C730A2A84864C0004B756 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				147D35E92A77DE33007E55D4 /* PostViewController.swift in Sources */,
 				14FDBA922A794CA300F596B7 /* StorageManager.swift in Sources */,
 				147D35C52A77D6A8007E55D4 /* HomeViewController.swift in Sources */,
 				143AA0CE2A7A38CA0067A7A8 /* Extension.swift in Sources */,
 				14FDBA8C2A794AD900F596B7 /* DatabaseManager.swift in Sources */,
+				147C73072A8482F90004B756 /* IGFeedPostTableViewCell.swift in Sources */,
 				147D35F42A77DF33007E55D4 /* SearchResultViewController.swift in Sources */,
 				147D35E52A77DDDA007E55D4 /* LoginViewController.swift in Sources */,
 				147D35F22A77DF26007E55D4 /* SearchViewController.swift in Sources */,
+				147C730E2A8486B80004B756 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				147D35E12A77DCEF007E55D4 /* ProfileViewController.swift in Sources */,
 				147D35F62A77DF84007E55D4 /* PostEditerViewController.swift in Sources */,
 				14FDBA8E2A794C2D00F596B7 /* AuthManager.swift in Sources */,
 				147D35C12A77D6A8007E55D4 /* AppDelegate.swift in Sources */,
 				147D35C32A77D6A8007E55D4 /* SceneDelegate.swift in Sources */,
+				147C730C2A8486870004B756 /* IGFeedPostActionsTableViewCell.swift in Sources */,
 				147D35F02A77DF09007E55D4 /* ListViewController.swift in Sources */,
 				147D35EE2A77DEFE007E55D4 /* SettingViewController.swift in Sources */,
 			);
